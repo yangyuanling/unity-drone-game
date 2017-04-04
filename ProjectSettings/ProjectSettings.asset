@@ -114,11 +114,11 @@ PlayerSettings:
   wiiUAllowScreenCapture: 1
   wiiUControllerCount: 0
   m_SupportedAspectRatios:
-    4:3: 1
-    5:4: 1
+    4:3: 0
+    5:4: 0
     16:10: 1
     16:9: 1
-    Others: 1
+    Others: 0
   bundleIdentifier: com.Company.ProductName
   bundleVersion: 1.0
   preloadedAssets: []
@@ -469,8 +469,12 @@ PlayerSettings:
   XboxOnePersistentLocalStorageSize: 0
   vrEditorSettings: {}
   cloudServicesEnabled:
+    Build: 0
+    Collab: 1
+    ErrorHub: 0
+    Hub: 0
     UNet: 1
-  cloudProjectId: 4e27a89f-5ca6-4eb8-aa4e-55634017ff65
-  projectName: Unity Drone Game
+  cloudProjectId: 9e4b7469-d6bc-4bbf-a680-3da825e1051b
+  projectName: Unity Drone Game (1)
   organizationId: jvaca1
   cloudEnabled: 0
