@@ -1708,7 +1708,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 100.893005, y: -0.000015258789, z: -0.000015258789}
+>>>>>>> master
+=======
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 100.893005, y: -0.000015258789, z: -0.000015258789}
 >>>>>>> master
 --- !u!1001 &94428184
@@ -17618,11 +17623,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: 8a41921104f46468dabf18e54e59f18d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   jetSound: {fileID: 759909364}
 =======
+=======
+>>>>>>> master
   m_Script: {fileID: 11500000, guid: 479f8c06db843dc488885960ad2699bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -17632,6 +17640,9 @@ MonoBehaviour:
   ForPropellarSpin4: {fileID: 0}
   upForce: 0
   currentYRotation: 0
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 --- !u!4 &759992575 stripped
 Transform:
@@ -44976,6 +44987,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400000, guid: d40c0b05f378cc544815ae1d172068cf, type: 2}
   m_PrefabInternal: {fileID: 1271848880}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 --- !u!1001 &1955164370
 Prefab:
@@ -45067,6 +45079,8 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_IsPrefabParent: 0
+>>>>>>> master
+=======
 >>>>>>> master
 --- !u!1 &1959034225
 GameObject:
