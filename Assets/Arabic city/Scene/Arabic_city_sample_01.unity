@@ -21308,7 +21308,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9db9336e9f17c9744847c5fe94c1650f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -21396,6 +21396,18 @@ MonoBehaviour:
   ForPropellarSpin4: {fileID: 0}
   upForce: 0
   currentYRotation: 0
+--- !u!114 &759909366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 759909356}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a41921104f46468dabf18e54e59f18d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jetSound: {fileID: 0}
 --- !u!4 &759992575 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: d40c0b05f378cc544815ae1d172068cf, type: 2}
