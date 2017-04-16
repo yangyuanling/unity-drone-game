@@ -163,6 +163,24 @@ public class Drone2MovementScript : MonoBehaviour
             tiltAmountSideways = Mathf.SmoothDamp(tiltAmountSideways, 0, ref tiltAmountVelocity, 0.1f);
         }
     }
+
+	void OnTriggerEnter(Collider col)
+	{
+		Debug.Log ("Entered");
+		if (col.gameObject.tag == "SlowSphere") {
+
+			Time.timeScale = 0.4f;
+		}
+	}
+	void OnTriggerExit(Collider col)
+	{
+		Debug.Log ("Exited");
+		if (col.gameObject.tag == "SlowSphere") {
+			//movementForwardSpeed = 100.0f;
+			//Destroy(gameObject);
+			Time.timeScale = 1.0f;
+		}
+	}
     //}
 
     // Update is called once per frame
