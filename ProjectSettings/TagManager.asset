@@ -8,6 +8,7 @@ TagManager:
   - Green
   - Blue
   - SlowSphere
+  - RingPassCol
   layers:
   - Default
   - TransparentFX
