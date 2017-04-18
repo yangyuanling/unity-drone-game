@@ -54,7 +54,7 @@ Material:
     - first:
         name: _MetallicGlossMap
       second:
-        m_Texture: {fileID: 2800000, guid: f6e8a425cb28249b09ad686f25ae8a2b, type: 3}
+        m_Texture: {fileID: 2800000, guid: c4450a3a80091074994cfbace1e7d0fe, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -84,7 +84,7 @@ Material:
       second: 0
     - first:
         name: _GlossMapScale
-      second: 0.692
+      second: 0.5
     - first:
         name: _Glossiness
       second: 0.5
