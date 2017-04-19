@@ -1303,6 +1303,7 @@ GameObject:
   - component: {fileID: 59623629}
   - component: {fileID: 59623628}
   - component: {fileID: 59623627}
+  - component: {fileID: 59623632}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1378,6 +1379,24 @@ Transform:
   m_Father: {fileID: 759909360}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &59623632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 59623626}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53541d77655de8840ac12e47ebf101e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Wavelength: 1
+  DistortionStrength: 0.6
+  Sparkling: 0
+  SaturationBase: 0
+  SaturationSpeed: 1.4
+  SaturationAmplitude: 3
+  currentShader: {fileID: 4800000, guid: 9a000f73a8e3410439f67f608719c581, type: 3}
 --- !u!1 &59704372 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 65588ddf4c5737f459b49994e92b3b87, type: 2}
@@ -2783,35 +2802,35 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013492819504, guid: 32944dd6333971f409a5c478df6be83e, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0.5511862
+      value: 0.6837665
       objectReference: {fileID: 0}
     - target: {fileID: 4000013492819504, guid: 32944dd6333971f409a5c478df6be83e, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.4429376
+      value: 0.180176
       objectReference: {fileID: 0}
     - target: {fileID: 4000013492819504, guid: 32944dd6333971f409a5c478df6be83e, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0.4429376
+      value: -0.180176
       objectReference: {fileID: 0}
     - target: {fileID: 4000013492819504, guid: 32944dd6333971f409a5c478df6be83e, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -0.5511862
+      value: 0.6837665
       objectReference: {fileID: 0}
     - target: {fileID: 4000013022660994, guid: 32944dd6333971f409a5c478df6be83e, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0.15218878
+      value: 0.6152851
       objectReference: {fileID: 0}
     - target: {fileID: 4000013022660994, guid: 32944dd6333971f409a5c478df6be83e, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0.6905343
+      value: 0.34845826
       objectReference: {fileID: 0}
     - target: {fileID: 4000013022660994, guid: 32944dd6333971f409a5c478df6be83e, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0.6905357
+      value: -0.34845924
       objectReference: {fileID: 0}
     - target: {fileID: 4000013022660994, guid: 32944dd6333971f409a5c478df6be83e, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.1521891
+      value: 0.6152864
       objectReference: {fileID: 0}
     - target: {fileID: 4000010155050976, guid: 32944dd6333971f409a5c478df6be83e, type: 2}
       propertyPath: m_LocalScale.y
@@ -22276,7 +22295,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100026, guid: 1c7c68c6ddb11f646aef48769e84fee4, type: 3}
       propertyPath: m_Name
-      value: Racing Drone v2 (1)
+      value: Racing Drone 2
       objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 1c7c68c6ddb11f646aef48769e84fee4, type: 3}
       propertyPath: m_Name
@@ -25044,6 +25063,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 0559175f357ca494ba34acd277f4ac81, type: 2}
+    - target: {fileID: 100026, guid: 1c7c68c6ddb11f646aef48769e84fee4, type: 3}
+      propertyPath: m_Name
+      value: Racing Drone 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1c7c68c6ddb11f646aef48769e84fee4, type: 3}
   m_IsPrefabParent: 0
@@ -35543,6 +35566,7 @@ GameObject:
   - component: {fileID: 1052762669}
   - component: {fileID: 1052762668}
   - component: {fileID: 1052762667}
+  - component: {fileID: 1052762666}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -35563,6 +35587,24 @@ Transform:
   m_Father: {fileID: 562954464}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1052762666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1052762664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53541d77655de8840ac12e47ebf101e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Wavelength: 3
+  DistortionStrength: 0.1
+  Sparkling: 0
+  SaturationBase: 1
+  SaturationSpeed: 1
+  SaturationAmplitude: 0.1
+  currentShader: {fileID: 4800000, guid: 9a000f73a8e3410439f67f608719c581, type: 3}
 --- !u!92 &1052762667
 Behaviour:
   m_ObjectHideFlags: 0
