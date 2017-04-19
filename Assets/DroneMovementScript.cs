@@ -165,13 +165,17 @@ public class DroneMovementScript : MonoBehaviour
     }
 
 	void OnTriggerEnter(Collider col)
-	{
-		Debug.Log ("Entered");
-		if (col.gameObject.tag == "SlowSphere") {
+    {
+        Debug.Log("Entered");
+        if (col.gameObject.tag == "SlowSphere") {
 
 			Time.timeScale = 0.4f;
 		}
-	}
+        if (col.gameObject.tag == "RingPassCol")
+        {
+            Debug.Log("Ringed!");
+        }
+    }
 	void OnTriggerExit(Collider col)
 	{
 		Debug.Log ("Exited");
