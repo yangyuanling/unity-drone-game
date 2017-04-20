@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DroneMovementScript : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class DroneMovementScript : MonoBehaviour
     public GameObject ForPropellarSpin3;
     public GameObject ForPropellarSpin4;
 
+    public GameObject Canvas1;
+
     void Awake()
     {
         ourDrone = GetComponent<Rigidbody>();
@@ -18,6 +21,7 @@ public class DroneMovementScript : MonoBehaviour
         ForPropellarSpin2 = GameObject.Find("Cylinder052");
         ForPropellarSpin3 = GameObject.Find("Cylinder015");
         ForPropellarSpin4 = GameObject.Find("Cylinder057");
+        Canvas1 = GameObject.Find("Canvas");
 
     }
 
@@ -181,11 +185,16 @@ public class DroneMovementScript : MonoBehaviour
 			Time.timeScale = 1.0f;
 		}
 	}
+    
 
     //}
 
     // Update is called once per frame
-    //void Update () {
-
-    //}
+    void Update () {
+        if (Input.GetKey(KeyCode.Q))
+        {
+            Debug.Log("Entered");
+            Canvas1.SetActive(true);
+        }
+    }
 }
