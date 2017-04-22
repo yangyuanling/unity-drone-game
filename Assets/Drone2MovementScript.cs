@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Drone2MovementScript : MonoBehaviour
 {
@@ -10,6 +12,17 @@ public class Drone2MovementScript : MonoBehaviour
     public GameObject ForPropellarSpin6;
     public GameObject ForPropellarSpin7;
     public GameObject ForPropellarSpin8;
+
+	public GameObject InterfaceCanvas;
+
+	public Text TimerText;
+	public Text RingsText2Object;
+	public Text Drone2FinishTimer;
+	private Text counterText;
+	private Text RingsText2Display;
+	private Text Drone2FinishDisplay;
+	private int counterRings2;
+	public float seconds, minutes;
 
     void Awake()
     {
@@ -171,6 +184,19 @@ public class Drone2MovementScript : MonoBehaviour
 
 			Time.timeScale = 0.4f;
 		}
+
+		if (col.gameObject.tag == "RingPassDetector") {
+
+			col.gameObject.SetActive (false);
+			counterRings2 += 1;
+			SetRing2CounterText ();
+		}
+
+		if (col.gameObject.tag == "LastRing") {
+
+			//col.gameObject.SetActive (false);
+			SetDrone2FinishTimeText ();
+		}
 	}
 	void OnTriggerExit(Collider col)
 	{
@@ -181,10 +207,35 @@ public class Drone2MovementScript : MonoBehaviour
 			Time.timeScale = 1.0f;
 		}
 	}
+
+	void SetRing2CounterText() {
+		RingsText2Display.text = "Rings: " + counterRings2.ToString();
+	}
+
+	void SetDrone2FinishTimeText() {
+		Debug.Log("Finished!");// + counterText.text);
+		Drone2FinishDisplay.text = "Finish Time:\n" + counterText.text;
+	}
     //}
 
     // Update is called once per frame
-    //void Update () {
 
-    //}
+	void Start() {
+		counterRings2 = 0;
+		counterText = TimerText.GetComponent(typeof(Text)) as Text;
+		RingsText2Display = RingsText2Object.GetComponent(typeof(Text)) as Text;
+		Drone2FinishDisplay = Drone2FinishTimer.GetComponent(typeof(Text)) as Text;
+
+		//counterText = GetComponent<Text> () as Text;
+	}
+
+	void Update () {
+		if (Input.GetKey(KeyCode.Q))
+		{
+			Debug.Log("Entered");
+			//Canvas1.SetActive(true);
+			SceneManager.LoadScene(0);
+		}
+	}
+
 }

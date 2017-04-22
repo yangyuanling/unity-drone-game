@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TitleToGame1 : MonoBehaviour {
 
@@ -11,8 +12,14 @@ public class TitleToGame1 : MonoBehaviour {
     public Camera Camera2;
 
     public GameObject Canvas1;
+	//public GameObject InterfaceCanvas;
     private AudioSource DroneEngine1;
+
+	public bool gameStarted=false;
     //private AudioSource DroneEngine2;
+
+	public Text RingsText2Object;
+	public Text Drone2FinishTimer;
 
     public void changeToSinglePlayer()
     {
@@ -21,14 +28,17 @@ public class TitleToGame1 : MonoBehaviour {
 
         DroneEngine1 = Drone1.GetComponent(typeof(AudioSource)) as AudioSource;
 
-        Canvas1 = GameObject.Find("Canvas");
+		Canvas1 = GameObject.Find("Canvas");
         //Camera2 = GameObject.Find("Main Camera2");
 
         Camera1.rect = new Rect(0.0f, 0.0f, 1.0f, 1.0f);
         //Camera2.view
 
         Canvas1.SetActive(false);
-        DroneEngine1.Play();
+		gameStarted = true;
+		RingsText2Object.GetComponent<Text>().enabled = false;
+		Drone2FinishTimer.GetComponent<Text>().enabled = false;
+		DroneEngine1.Play();
     }
 
     public void changeToMultiPlayer ()
@@ -44,7 +54,8 @@ public class TitleToGame1 : MonoBehaviour {
         Camera1.rect = new Rect(0.5f, 0.0f, 0.5f, 1.0f);
         Camera2.rect = new Rect(0.0f, 0.0f, 0.5f, 1.0f);
 
-        Canvas1.SetActive(false);
+		Canvas1.SetActive(false);
+		gameStarted = true;
         DroneEngine1.Play();
         //DroneEngine2.Play();
     }

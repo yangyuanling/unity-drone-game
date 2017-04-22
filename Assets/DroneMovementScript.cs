@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class DroneMovementScript : MonoBehaviour
 {
@@ -11,8 +12,17 @@ public class DroneMovementScript : MonoBehaviour
     public GameObject ForPropellarSpin2;
     public GameObject ForPropellarSpin3;
     public GameObject ForPropellarSpin4;
-
     public GameObject Canvas1;
+	public GameObject InterfaceCanvas;
+
+	public Text TimerText;
+	public Text RingsText1Object;
+	public Text Drone1FinishTimer;
+	private Text counterText;
+	private Text RingsText1Display;
+	private Text Drone1FinishDisplay;
+	private int counterRings1;
+	public float seconds, minutes;
 
     void Awake()
     {
@@ -22,7 +32,6 @@ public class DroneMovementScript : MonoBehaviour
         ForPropellarSpin3 = GameObject.Find("Cylinder015");
         ForPropellarSpin4 = GameObject.Find("Cylinder057");
         Canvas1 = GameObject.Find("Canvas");
-
     }
 
 
@@ -175,26 +184,63 @@ public class DroneMovementScript : MonoBehaviour
 
 			Time.timeScale = 0.4f;
 		}
+
+		if (col.gameObject.tag == "RingPassDetector") {
+
+			col.gameObject.SetActive (false);
+			counterRings1 += 1;
+			SetRing1CounterText ();
+		}
+
+		if (col.gameObject.tag == "LastRing") {
+
+			col.gameObject.SetActive (false);
+			SetDrone1FinishTimeText ();
+			col.gameObject.SetActive (true);
+		}
 	}
 	void OnTriggerExit(Collider col)
 	{
 		Debug.Log ("Exited");
 		if (col.gameObject.tag == "SlowSphere") {
 			//movementForwardSpeed = 100.0f;
-			//Destroy(gameObject);
 			Time.timeScale = 1.0f;
 		}
 	}
-    
 
+	void SetRing1CounterText() {
+		RingsText1Display.text = "Rings: " + counterRings1.ToString();
+	}
+
+	void SetDrone1FinishTimeText() {
+		Debug.Log("Finished!");// + counterText.text);
+		Drone1FinishDisplay.text = "Finish Time:\n" + counterText.text;
+	}
     //}
 
     // Update is called once per frame
-    void Update () {
+    
+	void Start() {
+		counterRings1 = 0;
+		counterText = TimerText.GetComponent(typeof(Text)) as Text;
+		RingsText1Display = RingsText1Object.GetComponent(typeof(Text)) as Text;
+		Drone1FinishDisplay = Drone1FinishTimer.GetComponent(typeof(Text)) as Text;
+
+		//counterText = GetComponent<Text> () as Text;
+	}
+
+	void Update () {
+
+		if((GameObject.Find("1PlayerButtonPressed").GetComponent<TitleToGame1>().gameStarted==true) || (GameObject.Find("2PlayerButtonPressed").GetComponent<TitleToGame1>().gameStarted==true)) {
+		 	minutes = (int)(Time.time / 60.0f);
+			seconds = (int)(Time.time % 60.0f);
+			counterText.text = minutes.ToString ("00") + ":" + seconds.ToString ("00");
+		}
         if (Input.GetKey(KeyCode.Q))
         {
             Debug.Log("Entered");
-            Canvas1.SetActive(true);
+            //Canvas1.SetActive(true);
+			SceneManager.LoadScene(0);
         }
     }
 }
