@@ -26,6 +26,7 @@ public class Drone2MovementScript : MonoBehaviour
 
     void Awake()
     {
+		DontDestroyOnLoad(this.gameObject);
         ourDrone2 = GetComponent<Rigidbody>();
         ForPropellarSpin5 = GameObject.Find("Cylinder063");
         ForPropellarSpin6 = GameObject.Find("Cylinder053");
@@ -235,6 +236,12 @@ public class Drone2MovementScript : MonoBehaviour
 			Debug.Log("Entered");
 			//Canvas1.SetActive(true);
 			SceneManager.LoadScene(0);
+		}
+		if (Input.GetKey(KeyCode.N))
+		{
+			Debug.Log("Switched");
+			//Canvas1.SetActive(true);
+			SceneManager.LoadScene(1);
 		}
 	}
 

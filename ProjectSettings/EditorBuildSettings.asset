@@ -7,3 +7,5 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Arabic city/Scene/Arabic_city_sample_01.unity
+  - enabled: 1
+    path: Assets/FPSHangar/Scene/Hangar.unity
