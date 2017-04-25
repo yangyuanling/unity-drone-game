@@ -8,9 +8,6 @@ TagManager:
   - Green
   - Blue
   - SlowSphere
-  - Fire
-  - RingPassDetector
-  - LastRing
   layers:
   - Default
   - TransparentFX

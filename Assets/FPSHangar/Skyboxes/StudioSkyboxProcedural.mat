@@ -75,7 +75,7 @@ Material:
       second: 0.5
     - first:
         name: _AtmosphereThickness
-      second: 1.4
+      second: 1.2572583
     - first:
         name: _BumpScale
       second: 1
@@ -112,9 +112,6 @@ Material:
     - first:
         name: _SrcBlend
       second: 1
-    - first:
-        name: _SunDisk
-      second: 2
     - first:
         name: _SunSize
       second: 0.057
