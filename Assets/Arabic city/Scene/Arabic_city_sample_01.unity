@@ -473,6 +473,11 @@ MeshCollider:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 424dd564c74fed144b0535e9ee9feb02, type: 2}
   m_PrefabInternal: {fileID: 1296985395}
+--- !u!1 &20659903 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b,
+    type: 2}
+  m_PrefabInternal: {fileID: 627186059}
 --- !u!1 &23636278 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 8a9528ceec9499d4b97b15b019db6c5f, type: 2}
@@ -5019,6 +5024,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &49578248 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b,
+    type: 2}
+  m_PrefabInternal: {fileID: 49578247}
 --- !u!1001 &52134346
 Prefab:
   m_ObjectHideFlags: 0
@@ -6777,35 +6787,35 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013492819504, guid: 32944dd6333971f409a5c478df6be83e, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0.66515225
+      value: -0.5718031
       objectReference: {fileID: 0}
     - target: {fileID: 4000013492819504, guid: 32944dd6333971f409a5c478df6be83e, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0.23994276
+      value: -0.41598225
       objectReference: {fileID: 0}
     - target: {fileID: 4000013492819504, guid: 32944dd6333971f409a5c478df6be83e, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0.23994276
+      value: 0.41598225
       objectReference: {fileID: 0}
     - target: {fileID: 4000013492819504, guid: 32944dd6333971f409a5c478df6be83e, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.66515225
+      value: -0.5718031
       objectReference: {fileID: 0}
     - target: {fileID: 4000013022660994, guid: 32944dd6333971f409a5c478df6be83e, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0.5442694
+      value: 0.21766616
       objectReference: {fileID: 0}
     - target: {fileID: 4000013022660994, guid: 32944dd6333971f409a5c478df6be83e, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0.45140988
+      value: 0.6727715
       objectReference: {fileID: 0}
     - target: {fileID: 4000013022660994, guid: 32944dd6333971f409a5c478df6be83e, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0.45140988
+      value: -0.6727715
       objectReference: {fileID: 0}
     - target: {fileID: 4000013022660994, guid: 32944dd6333971f409a5c478df6be83e, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.5442694
+      value: 0.21766616
       objectReference: {fileID: 0}
     - target: {fileID: 4000010155050976, guid: 32944dd6333971f409a5c478df6be83e, type: 2}
       propertyPath: m_LocalScale.y
@@ -8627,6 +8637,7 @@ GameObject:
   - component: {fileID: 186589835}
   - component: {fileID: 186589834}
   - component: {fileID: 186589833}
+  - component: {fileID: 186589836}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: RingPassDetector
@@ -8697,6 +8708,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 186589831}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &186589836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 186589831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b4f6075d8c70a44915be97a9dc2fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentRing: {fileID: 1692997338}
+  nextRing: {fileID: 20659903}
 --- !u!1 &187238160 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 28723f10c2a8e094a9351e892f5271b8, type: 3}
@@ -12399,7 +12423,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000012193690298, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -13180,6 +13204,11 @@ MeshCollider:
   m_InflateMesh: 1
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300042, guid: 28a92464eff5df249a5023574bf4b2ee, type: 3}
+--- !u!1 &226775564 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1948411684}
 --- !u!4 &227738718 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 08f98e83a1bb11a49ab462c6152391d2, type: 2}
@@ -14177,7 +14206,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
@@ -14263,6 +14292,7 @@ GameObject:
   - component: {fileID: 238419145}
   - component: {fileID: 238419144}
   - component: {fileID: 238419143}
+  - component: {fileID: 238419146}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: RingPassDetector
@@ -14333,6 +14363,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 238419141}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &238419146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 238419141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b4f6075d8c70a44915be97a9dc2fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentRing: {fileID: 455858837}
+  nextRing: {fileID: 1638009755}
 --- !u!1001 &240752839
 Prefab:
   m_ObjectHideFlags: 0
@@ -16137,6 +16180,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e623495323e2fac49983eaa5876eaecd, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &292305838 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b,
+    type: 2}
+  m_PrefabInternal: {fileID: 638741685}
 --- !u!1001 &294923387
 Prefab:
   m_ObjectHideFlags: 0
@@ -16207,6 +16255,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a701db40622be4d45b1bef5881ee4249, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &295036641 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b,
+    type: 2}
+  m_PrefabInternal: {fileID: 2074443555}
 --- !u!1001 &296018540
 Prefab:
   m_ObjectHideFlags: 0
@@ -17413,7 +17466,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
@@ -18691,6 +18744,11 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 8a9528ceec9499d4b97b15b019db6c5f, type: 2}
   m_PrefabInternal: {fileID: 1793947760}
+--- !u!1 &353104760 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1802556571}
 --- !u!4 &353507114 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: a701db40622be4d45b1bef5881ee4249, type: 2}
@@ -19277,6 +19335,11 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 8a9528ceec9499d4b97b15b019db6c5f, type: 2}
   m_PrefabInternal: {fileID: 1150619530}
+--- !u!1 &378442156 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b,
+    type: 2}
+  m_PrefabInternal: {fileID: 313988377}
 --- !u!1 &378500319 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: a701db40622be4d45b1bef5881ee4249, type: 2}
@@ -19306,6 +19369,7 @@ GameObject:
   - component: {fileID: 379074361}
   - component: {fileID: 379074360}
   - component: {fileID: 379074359}
+  - component: {fileID: 379074362}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: RingPassDetector
@@ -19376,6 +19440,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 379074357}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &379074362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 379074357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b4f6075d8c70a44915be97a9dc2fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentRing: {fileID: 981834210}
+  nextRing: {fileID: 226775564}
 --- !u!4 &385348150 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 4f422e1e2dbdda44ca0b5f0115abda3f, type: 2}
@@ -21718,6 +21795,11 @@ MeshCollider:
   m_InflateMesh: 1
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300040, guid: 28a92464eff5df249a5023574bf4b2ee, type: 3}
+--- !u!1 &455858837 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b,
+    type: 2}
+  m_PrefabInternal: {fileID: 236568871}
 --- !u!1 &458417129 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000010246107118, guid: 1e954a63b44967b41bd995ec6d80eeee,
@@ -21748,6 +21830,7 @@ GameObject:
   - component: {fileID: 459416757}
   - component: {fileID: 459416756}
   - component: {fileID: 459416755}
+  - component: {fileID: 459416758}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: RingPassDetector
@@ -21818,6 +21901,24 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 459416753}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &459416758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 459416753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b4f6075d8c70a44915be97a9dc2fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentRing: {fileID: 1976959045}
+  nextRing: {fileID: 292305838}
+--- !u!1 &460367246 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1207851625}
 --- !u!1 &461861247 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: d40c0b05f378cc544815ae1d172068cf, type: 2}
@@ -27496,6 +27597,7 @@ GameObject:
   - component: {fileID: 506796749}
   - component: {fileID: 506796748}
   - component: {fileID: 506796747}
+  - component: {fileID: 506796750}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: RingPassDetector
@@ -27566,6 +27668,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 506796745}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &506796750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 506796745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b4f6075d8c70a44915be97a9dc2fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentRing: {fileID: 1073751133}
+  nextRing: {fileID: 378442156}
 --- !u!1 &510112705 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 424dd564c74fed144b0535e9ee9feb02, type: 2}
@@ -27807,6 +27922,7 @@ GameObject:
   - component: {fileID: 515874210}
   - component: {fileID: 515874209}
   - component: {fileID: 515874208}
+  - component: {fileID: 515874211}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: RingPassDetector
@@ -27877,6 +27993,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 515874206}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &515874211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 515874206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b4f6075d8c70a44915be97a9dc2fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentRing: {fileID: 1696732444}
+  nextRing: {fileID: 716827140}
 --- !u!1001 &522013387
 Prefab:
   m_ObjectHideFlags: 0
@@ -28367,6 +28496,7 @@ GameObject:
   - component: {fileID: 547642205}
   - component: {fileID: 547642204}
   - component: {fileID: 547642203}
+  - component: {fileID: 547642206}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: RingPassDetector
@@ -28437,6 +28567,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 547642201}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &547642206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 547642201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b4f6075d8c70a44915be97a9dc2fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentRing: {fileID: 1756879565}
+  nextRing: {fileID: 1073751133}
 --- !u!1 &549460121 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 8a9528ceec9499d4b97b15b019db6c5f, type: 2}
@@ -31836,6 +31979,11 @@ MeshCollider:
   m_InflateMesh: 1
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300042, guid: 28a92464eff5df249a5023574bf4b2ee, type: 3}
+--- !u!1 &558789311 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b,
+    type: 2}
+  m_PrefabInternal: {fileID: 198849028}
 --- !u!1 &559157428 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 65588ddf4c5737f459b49994e92b3b87, type: 2}
@@ -34618,7 +34766,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
@@ -34670,6 +34818,7 @@ GameObject:
   - component: {fileID: 628430503}
   - component: {fileID: 628430502}
   - component: {fileID: 628430501}
+  - component: {fileID: 628430504}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: RingPassDetector
@@ -34740,6 +34889,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 628430499}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &628430504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 628430499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b4f6075d8c70a44915be97a9dc2fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentRing: {fileID: 467959807}
+  nextRing: {fileID: 558789311}
 --- !u!1001 &630083859
 Prefab:
   m_ObjectHideFlags: 0
@@ -35647,7 +35809,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
@@ -36955,7 +37117,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100026, guid: 1c7c68c6ddb11f646aef48769e84fee4, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 400026, guid: 1c7c68c6ddb11f646aef48769e84fee4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -39330,7 +39492,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000012193690298, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -39513,6 +39675,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a701db40622be4d45b1bef5881ee4249, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &716827140 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1707004341}
 --- !u!1 &717894059
 GameObject:
   m_ObjectHideFlags: 0
@@ -39616,6 +39783,7 @@ GameObject:
   - component: {fileID: 719689957}
   - component: {fileID: 719689956}
   - component: {fileID: 719689955}
+  - component: {fileID: 719689958}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: RingPassDetector
@@ -39686,6 +39854,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 719689953}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &719689958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 719689953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b4f6075d8c70a44915be97a9dc2fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentRing: {fileID: 1014462823}
+  nextRing: {fileID: 467959807}
 --- !u!4 &721836801 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 8aa8805ee4c313e42bc4ed521af7facb, type: 2}
@@ -40615,7 +40796,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100026, guid: 1c7c68c6ddb11f646aef48769e84fee4, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 1c7c68c6ddb11f646aef48769e84fee4, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -42398,7 +42579,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
@@ -43399,6 +43580,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d40c0b05f378cc544815ae1d172068cf, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &820013669 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1014038185}
 --- !u!1001 &820102672
 Prefab:
   m_ObjectHideFlags: 0
@@ -45098,6 +45284,7 @@ GameObject:
   - component: {fileID: 880856737}
   - component: {fileID: 880856736}
   - component: {fileID: 880856735}
+  - component: {fileID: 880856738}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: RingPassDetector
@@ -45168,6 +45355,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 880856733}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &880856738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 880856733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b4f6075d8c70a44915be97a9dc2fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentRing: {fileID: 378442156}
+  nextRing: {fileID: 820013669}
 --- !u!1001 &881231516
 Prefab:
   m_ObjectHideFlags: 0
@@ -46096,6 +46296,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &888699680 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b,
+    type: 2}
+  m_PrefabInternal: {fileID: 888699679}
 --- !u!1 &889282131
 GameObject:
   m_ObjectHideFlags: 0
@@ -46107,6 +46312,7 @@ GameObject:
   - component: {fileID: 889282135}
   - component: {fileID: 889282134}
   - component: {fileID: 889282133}
+  - component: {fileID: 889282136}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: RingPassDetector
@@ -46177,6 +46383,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 889282131}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &889282136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 889282131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b4f6075d8c70a44915be97a9dc2fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentRing: {fileID: 295036641}
+  nextRing: {fileID: 1539235120}
 --- !u!1001 &889510786
 Prefab:
   m_ObjectHideFlags: 0
@@ -47272,6 +47491,7 @@ GameObject:
   - component: {fileID: 921208594}
   - component: {fileID: 921208593}
   - component: {fileID: 921208592}
+  - component: {fileID: 921208595}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: RingPassDetector
@@ -47342,6 +47562,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 921208590}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &921208595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 921208590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b4f6075d8c70a44915be97a9dc2fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentRing: {fileID: 888699680}
+  nextRing: {fileID: 455858837}
 --- !u!1001 &921722799
 Prefab:
   m_ObjectHideFlags: 0
@@ -47445,6 +47678,7 @@ GameObject:
   - component: {fileID: 924762913}
   - component: {fileID: 924762912}
   - component: {fileID: 924762911}
+  - component: {fileID: 924762914}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: RingPassDetector
@@ -47515,6 +47749,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 924762909}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &924762914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 924762909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b4f6075d8c70a44915be97a9dc2fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentRing: {fileID: 820013669}
+  nextRing: {fileID: 295036641}
 --- !u!1 &926353574 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: e6719dc83f732a84f90413fbefd67723, type: 2}
@@ -48290,7 +48537,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000012193690298, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -51046,6 +51293,11 @@ MeshCollider:
   m_InflateMesh: 1
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300046, guid: 28a92464eff5df249a5023574bf4b2ee, type: 3}
+--- !u!1 &981834210 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1728197484}
 --- !u!1 &982470997 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 65588ddf4c5737f459b49994e92b3b87, type: 2}
@@ -52708,7 +52960,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
@@ -52737,6 +52989,11 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: af96fe81940f855479985d8834a33769, type: 3}
+--- !u!1 &1014462823 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1869167982}
 --- !u!4 &1015110345 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 65588ddf4c5737f459b49994e92b3b87, type: 2}
@@ -52929,6 +53186,11 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 8a9528ceec9499d4b97b15b019db6c5f, type: 2}
   m_PrefabInternal: {fileID: 2095195677}
+--- !u!1 &1019970258 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b,
+    type: 2}
+  m_PrefabInternal: {fileID: 2008866010}
 --- !u!4 &1020034378 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: d40c0b05f378cc544815ae1d172068cf, type: 2}
@@ -53602,7 +53864,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
@@ -58450,6 +58712,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d40c0b05f378cc544815ae1d172068cf, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1073751133 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b,
+    type: 2}
+  m_PrefabInternal: {fileID: 788673979}
 --- !u!1 &1074113676 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 42a7f74d87deaa04fbe763ff64287078, type: 2}
@@ -59669,6 +59936,7 @@ GameObject:
   - component: {fileID: 1086561001}
   - component: {fileID: 1086561000}
   - component: {fileID: 1086560999}
+  - component: {fileID: 1086561002}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: RingPassDetector
@@ -59739,6 +60007,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1086560997}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1086561002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1086560997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b4f6075d8c70a44915be97a9dc2fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentRing: {fileID: 1019970258}
+  nextRing: {fileID: 1692997338}
 --- !u!1001 &1086770479
 Prefab:
   m_ObjectHideFlags: 0
@@ -67225,7 +67506,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
@@ -67750,6 +68031,7 @@ GameObject:
   - component: {fileID: 1237763663}
   - component: {fileID: 1237763662}
   - component: {fileID: 1237763661}
+  - component: {fileID: 1237763664}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: RingPassDetector
@@ -67820,6 +68102,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1237763659}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1237763664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1237763659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b4f6075d8c70a44915be97a9dc2fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentRing: {fileID: 460367246}
+  nextRing: {fileID: 1019970258}
 --- !u!4 &1238411910 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 65588ddf4c5737f459b49994e92b3b87, type: 2}
@@ -75782,6 +76077,7 @@ GameObject:
   - component: {fileID: 1377374597}
   - component: {fileID: 1377374596}
   - component: {fileID: 1377374595}
+  - component: {fileID: 1377374598}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: RingPassDetector
@@ -75852,6 +76148,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1377374593}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1377374598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1377374593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b4f6075d8c70a44915be97a9dc2fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentRing: {fileID: 558789311}
+  nextRing: {fileID: 1517762429}
 --- !u!4 &1377738346 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 65588ddf4c5737f459b49994e92b3b87, type: 2}
@@ -76569,7 +76878,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
@@ -81668,6 +81977,7 @@ GameObject:
   - component: {fileID: 1454811103}
   - component: {fileID: 1454811102}
   - component: {fileID: 1454811101}
+  - component: {fileID: 1454811104}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: RingPassDetector
@@ -81738,6 +82048,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1454811099}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1454811104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1454811099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b4f6075d8c70a44915be97a9dc2fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentRing: {fileID: 292305838}
+  nextRing: {fileID: 1756879565}
 --- !u!1001 &1454877525
 Prefab:
   m_ObjectHideFlags: 0
@@ -81975,6 +82298,7 @@ GameObject:
   - component: {fileID: 1460613609}
   - component: {fileID: 1460613608}
   - component: {fileID: 1460613607}
+  - component: {fileID: 1460613610}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: RingPassDetector
@@ -82045,6 +82369,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1460613605}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1460613610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1460613605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b4f6075d8c70a44915be97a9dc2fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentRing: {fileID: 20659903}
+  nextRing: {fileID: 1014462823}
 --- !u!1 &1461239512 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: d40c0b05f378cc544815ae1d172068cf, type: 2}
@@ -83365,7 +83702,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
@@ -86581,6 +86918,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7a5451c55436a2b4fbe510feafa24047, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1517762429 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b,
+    type: 2}
+  m_PrefabInternal: {fileID: 714924220}
 --- !u!1001 &1518600035
 Prefab:
   m_ObjectHideFlags: 0
@@ -87003,6 +87345,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a701db40622be4d45b1bef5881ee4249, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1539235120 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000013587899672, guid: 1e954a63b44967b41bd995ec6d80eeee,
+    type: 2}
+  m_PrefabInternal: {fileID: 1799579312}
 --- !u!4 &1539954673 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 7e5b82790519a914cbde94fb89b3dcc9, type: 2}
@@ -89085,7 +89432,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
@@ -90424,6 +90771,11 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 65588ddf4c5737f459b49994e92b3b87, type: 2}
   m_PrefabInternal: {fileID: 672462788}
+--- !u!1 &1638009755 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1927658844}
 --- !u!1001 &1638665996
 Prefab:
   m_ObjectHideFlags: 0
@@ -91685,6 +92037,7 @@ GameObject:
   - component: {fileID: 1688675734}
   - component: {fileID: 1688675733}
   - component: {fileID: 1688675732}
+  - component: {fileID: 1688675735}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: RingPassDetector
@@ -91755,6 +92108,24 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1688675730}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1688675735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1688675730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b4f6075d8c70a44915be97a9dc2fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentRing: {fileID: 1638009755}
+  nextRing: {fileID: 460367246}
+--- !u!1 &1692997338 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1390205218}
 --- !u!4 &1694217219 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: d40c0b05f378cc544815ae1d172068cf, type: 2}
@@ -91799,6 +92170,11 @@ MeshCollider:
   m_InflateMesh: 1
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300020, guid: 28a92464eff5df249a5023574bf4b2ee, type: 3}
+--- !u!1 &1696732444 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1580366892}
 --- !u!1001 &1698745206
 Prefab:
   m_ObjectHideFlags: 0
@@ -91936,6 +92312,7 @@ GameObject:
   - component: {fileID: 1706200821}
   - component: {fileID: 1706200820}
   - component: {fileID: 1706200819}
+  - component: {fileID: 1706200822}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: RingPassDetector
@@ -92006,6 +92383,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1706200817}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1706200822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1706200817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b4f6075d8c70a44915be97a9dc2fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentRing: {fileID: 49578248}
+  nextRing: {fileID: 888699680}
 --- !u!1 &1706255550 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: d40c0b05f378cc544815ae1d172068cf, type: 2}
@@ -92693,7 +93083,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
@@ -94584,7 +94974,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
@@ -98674,6 +99064,11 @@ MeshCollider:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: b148c2828acd3ca47ab127e980c8c701, type: 2}
   m_PrefabInternal: {fileID: 651214889}
+--- !u!1 &1756879565 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1498367489}
 --- !u!4 &1757105785 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: d40c0b05f378cc544815ae1d172068cf, type: 2}
@@ -99949,6 +100344,52 @@ Prefab:
       propertyPath: m_TagString
       value: LastRing
       objectReference: {fileID: 0}
+    - target: {fileID: 19843260, guid: 1e954a63b44967b41bd995ec6d80eeee, type: 2}
+      propertyPath: randomSeed
+      value: 1242670132
+      objectReference: {fileID: 0}
+    - target: {fileID: 19921320, guid: 1e954a63b44967b41bd995ec6d80eeee, type: 2}
+      propertyPath: m_SelectedEditorRenderState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 199000012762680228, guid: 1e954a63b44967b41bd995ec6d80eeee,
+        type: 2}
+      propertyPath: m_SelectedEditorRenderState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 199000014018385404, guid: 1e954a63b44967b41bd995ec6d80eeee,
+        type: 2}
+      propertyPath: m_SelectedEditorRenderState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012097461194, guid: 1e954a63b44967b41bd995ec6d80eeee, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 4.403252
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012097461194, guid: 1e954a63b44967b41bd995ec6d80eeee, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 4.269539
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013986460178, guid: 1e954a63b44967b41bd995ec6d80eeee, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 4.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013986460178, guid: 1e954a63b44967b41bd995ec6d80eeee, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 4.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 494654, guid: 1e954a63b44967b41bd995ec6d80eeee, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 4.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 494654, guid: 1e954a63b44967b41bd995ec6d80eeee, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 4.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013587899672, guid: 1e954a63b44967b41bd995ec6d80eeee, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1e954a63b44967b41bd995ec6d80eeee, type: 2}
   m_IsPrefabParent: 0
@@ -100709,7 +101150,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
@@ -102425,7 +102866,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000012193690298, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -103926,7 +104367,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
@@ -105250,7 +105691,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
@@ -105312,6 +105753,7 @@ GameObject:
   - component: {fileID: 1957235481}
   - component: {fileID: 1957235480}
   - component: {fileID: 1957235479}
+  - component: {fileID: 1957235482}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: RingPassDetector
@@ -105382,6 +105824,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1957235477}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1957235482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1957235477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b4f6075d8c70a44915be97a9dc2fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentRing: {fileID: 1517762429}
+  nextRing: {fileID: 981834210}
 --- !u!1 &1958743615 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 8a9528ceec9499d4b97b15b019db6c5f, type: 2}
@@ -106437,6 +106892,7 @@ GameObject:
   - component: {fileID: 1975686220}
   - component: {fileID: 1975686219}
   - component: {fileID: 1975686218}
+  - component: {fileID: 1975686221}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: RingPassDetector
@@ -106507,6 +106963,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1975686216}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1975686221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1975686216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b4f6075d8c70a44915be97a9dc2fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentRing: {fileID: 716827140}
+  nextRing: {fileID: 1976959045}
 --- !u!1001 &1975701791
 Prefab:
   m_ObjectHideFlags: 0
@@ -106663,6 +107132,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a41acea596263e8469f950d04ba946f0, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1976959045 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1020556082}
 --- !u!1 &1982771171 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: d40c0b05f378cc544815ae1d172068cf, type: 2}
@@ -106992,6 +107466,7 @@ GameObject:
   - component: {fileID: 2006551902}
   - component: {fileID: 2006551901}
   - component: {fileID: 2006551900}
+  - component: {fileID: 2006551903}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: RingPassDetector
@@ -107062,6 +107537,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2006551898}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2006551903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2006551898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b4f6075d8c70a44915be97a9dc2fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentRing: {fileID: 226775564}
+  nextRing: {fileID: 353104760}
 --- !u!1001 &2007079826
 Prefab:
   m_ObjectHideFlags: 0
@@ -107875,7 +108363,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
@@ -110567,7 +111055,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000012387892066, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 562793000a2aa1742b74f0f5c656103b, type: 2}
@@ -112035,6 +112523,7 @@ GameObject:
   - component: {fileID: 2102688241}
   - component: {fileID: 2102688240}
   - component: {fileID: 2102688239}
+  - component: {fileID: 2102688242}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: RingPassDetector
@@ -112105,6 +112594,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2102688237}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2102688242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2102688237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b4f6075d8c70a44915be97a9dc2fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentRing: {fileID: 353104760}
+  nextRing: {fileID: 1696732444}
 --- !u!1001 &2103014805
 Prefab:
   m_ObjectHideFlags: 0
