@@ -12,15 +12,15 @@ public class EnemyDroneMovementScript : MonoBehaviour {
 	private float rotation;
 	// Use this for initialization
 	void Start () {
-		min = transform.position.x;
-		max = transform.position.x + 10;
+		min = transform.position.z;
+		max = transform.position.z + 10;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
 		rotation = rotationSpeed * Time.deltaTime;
-		transform.position = new Vector3 (Mathf.PingPong (Time.time * 10, max - min) + min, transform.position.y, transform.position.z);
+		transform.position = new Vector3 (transform.position.x, transform.position.y, Mathf.PingPong (Time.time * 7, max - min) + min);
 		transform.Rotate (0, rotation, 0);
 	}
 }
